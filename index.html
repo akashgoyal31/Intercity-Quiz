@@ -1,0 +1,1144 @@
+<html class="fa-events-icons-ready">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <!-- Responsive meta-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Fonts imports-->
+    <!-- <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'> -->
+    <title>Intercity Quizzing Challenge</title>
+    <!-- Fevicon -->
+    <link href="logo.png" rel="shortcut icon" type="image/x-icon" />
+    <!-- Core css-->
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <!-- <link href="timeline.css" rel="stylesheet" typ="text/css" /> -->
+    <!-- font -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:400,600,700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <script
+      type="text/javascript"
+      async=""
+      src="https://www.google-analytics.com/analytics.js"
+    ></script>
+    <script
+      type="text/javascript"
+      async=""
+      src="https://www.googletagmanager.com/gtag/js?id=G-YL741ML69B&amp;l=dataLayer&amp;cx=c"
+    ></script>
+    <script src="https://use.fontawesome.com/8a628d71ed.js"></script>
+    <link
+      href="https://use.fontawesome.com/8a628d71ed.css"
+      media="all"
+      rel="stylesheet"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.min.js"
+      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+      crossorigin="anonymous"
+    ></script>
+    <link
+      crossorigin="anonymous"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+      integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
+      rel="stylesheet"
+    />
+    <script>
+      window.addEventListener("load", (event) => {
+        const urlSearchParams = new URLSearchParams(window.location.search);
+        const params = Object.fromEntries(urlSearchParams.entries());
+        console.log(params);
+        $(".reg_btn").each(function () {
+          $(this).attr("href", "registration_form.html?ref=" + params.ref);
+        });
+      });
+    </script>
+  </head>
+
+  <body>
+    <nav
+      class="d-block justify-content-between align-items-center d-md-none navbar navbar-expand-lg navbar-light bg-light"
+      style="position: absolute"
+    >
+      <div class="d-flex justify-content-start align-items-center">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+          style="margin-top: 30px"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand d-flex" href="./">
+          <img src="img/iqc_logo.png" style="height: 90px" />
+        </a>
+      </div>
+      <div
+        class="collapse navbar-collapse"
+        id="navbarNavAltMarkup"
+        style="
+          background: rgb(255, 255, 255);
+          width: 100vw;
+          margin: -6px -16px;
+          padding: 0px 20px 20px;
+          position: absolute;
+          z-index: 9;
+        "
+      >
+        <div class="navbar-nav">
+          <a class="nav-item nav-link" href="#about">About </a>
+          <a class="nav-item nav-link" href="#IQC">Structure of IQC</a>
+          <!--<a class="nav-item nav-link" href="#Book_now">Quiz Masters</a>-->
+          <a class="nav-item nav-link" href="#myTabContent">Prizes</a>
+          <a
+            class="nav-item nav-link"
+            target="_blank"
+            href="Season-1-highlights.pdf"
+            >S1 Highlights</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <nav class="d-none d-md-flex w-100 bg-light fixed-top">
+      <!-- Brand/logo -->
+      <div
+        class="container d-flex justify-content-between nd align-items-center"
+      >
+        <a class="navbar-brand" href="./"> <img src="logo.png" /> </a>
+        <!-- Links -->
+        <ul class="d-flex d-none d-md-flex m-0 nav-ul" type="none">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="#IQC">Structure of IQC</a>
+          </li>
+          <!--<li class="nav-item"> <a class="nav-link" href="#Book_now">Quiz Masters</a> </li>-->
+          <li class="nav-item">
+            <a class="nav-link" href="#myTabContent">Prizes</a>
+          </li>
+          <!--<li class="nav-item"> <a class="nav-link" href="#faqs">FAQ's</a> </li>-->
+          <li class="nav-item">
+            <a class="nav-link" target="_blank" href="Season-1-highlights.pdf"
+              >S1 Highlights</a
+            >
+          </li>
+          <!--<li class="nav-item" style="padding-right: 10px;"><div class="book-btn"> <a class="styled-banner-book-btn1" href="https://indiaqc.in/attachment/IQC-Top-125.pdf" target="_blank">Prelims 1 Results</a></div></li>-->
+          <!-- <li class="nav-item">
+            <div class="book-btn">
+              <a class="styled-banner-book-btn" href="#Winners">Winners</a>
+            </div>
+          </li> -->
+          <!-- <li class="nav-item"> <a class="nav-link" href="javascript:void(0);">Semi Finals <br/>& Grand Finale</a></li> -->
+          <!-- <li class="nav-item" style="padding-right: 10px;"> <div class="book-btn"><a class="styled-banner-book-btn1" href="#winners">Winners</a></div></li> -->
+          <!--<li class="nav-item">
+					 <div class="book-btn"><a class="styled-banner-book-btn2 reg_btn" target="_blank"
+							href="registration_form.html">Register Now</a></div> 
+					<div class="book-btn"><a class="styled-banner-book-btn2 reg_btn" target="_blank"
+							href="https://quiz.indiaqc.in">Prelims 1</a></div>
+				</li>-->
+        </ul>
+      </div>
+    </nav>
+    <section class="header_banner new-banner">
+      <div class="video-container">
+        <iframe
+          src="https://www.youtube.com/embed/YOWYd37QWl4?controls=0"
+          frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen=""
+        ></iframe>
+      </div>
+    </section>
+    <section class="header_banner" id="about">
+      <h4 class="title w-100" style="color: #333333; text-align: center">
+        <b>National Level Quiz Championship for Grades 6 to 10</b>
+      </h4>
+      <div class="container">
+        <div class="left-col-intro">
+          <p style="margin-top: 30px">Greetings Students!</p>
+          <p>
+            With great pleasure, we announce the launch of<br />
+            <span class="span-bold-heading"
+              >IQC - India Quiz Championship – Hunt for India’s Young Genius ™ -
+              SEASON 2</span
+            >
+          </p>
+          <p>
+            This Quiz Championship is a
+            <span class="span-bold-heading"
+              >Digital National Level Championship </span
+            >for grades <span class="span-bold-heading">6th to 10th</span>
+            <br />
+            conducted by Asia’s most prolific quiz master –
+            <span class="span-bold-heading"
+              ><i>‘Pickbrain’ Giri Balasubramanium</i></span
+            >
+          </p>
+          <p>
+            IQC or India Quiz Championship
+            <span class="span-bold-heading"
+              >offers a lot of exciting prizes, goodies and scholarships to
+              students,</span
+            >
+            apart from
+            <span class="span-bold-heading"
+              >accolades, awards &amp; certificates</span
+            >
+            to the school &amp; its management.
+          </p>
+          <p>
+            This year, IQC is also supporting a cause –
+            <span class="span-bold-heading">‘Education First’</span>
+            with its partner NGO –
+            <span class="span-bold-heading">Shree Raj Education Centre</span>
+            hence it is also
+            <span class="span-bold-heading"><i>a Quiz for a Cause!</i></span>
+          </p>
+          <p>
+            The First Season witnessed the participation of 2200 schools Pan
+            India across 1200+ Cities &amp; Towns a massive 18,418 students
+            participation! What are you waiting for?
+            <b>Register NOW!</b>
+          </p>
+          <p>Let’s make a difference, Hearty welcome!</p>
+
+          <p style="font-size: 14px; color: #7a7a7a" class="mt-2">
+            Registration <strike>Rs299</strike> Early Birds @Rs199 only
+          </p>
+          <div class="mt-2 mb-4 register">
+            <a
+              class="styled-banner-book-btn reg_btn"
+              target="_blank"
+              href="registration_form.html?ref=undefined"
+              >Register now</a
+            >
+          </div>
+          <p style="font-size: 14px; color: #7a7a7a">
+            All registration proceeds goes towards upliftment of rural education
+            in India through NGO Shree Raj Educational Centre
+          </p>
+        </div>
+        <div class="right-col-intro">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/YUZl8MPDZRI"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen=""
+            style="margin-top: 30px"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+    <!-- <div
+      class="detail d-flex align-items-start flex-column flex-sm-column flex-md-row flex-lg-row justify-content-around flex-nowrap"
+      id="Winners"
+    >
+      <div class="container w-100">
+        <div class="about-marathon w-100">
+          <h4
+            class="title w-100"
+            style="color: #333333; text-align: center"
+            id="winners"
+          >
+            <b>Winners of Quiz Championship 2022</b>
+          </h4>
+          <div class="about-marathon w-100">
+            <img src="img/winners-2022.png" alt="winners" width="100%" />
+          </div>
+        </div>
+        <div class="about-marathon w-100">
+          <div class="about-marathon w-100">
+            <h4
+              class="title w-100"
+              style="color: #333333; text-align: center"
+              id="winners"
+            >
+              <b>Watch the Grand Finale of Season 2</b>
+            </h4>
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/YOWYd37QWl4"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen=""
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </div> -->
+    <!-- <div
+      class="detail d-flex align-items-start flex-column flex-sm-column flex-md-row flex-lg-row justify-content-around flex-nowrap"
+    >
+      <div class="container w-100">
+        <div class="about-marathon w-100">
+          <h4
+            class="title w-100"
+            style="color: #333333; text-align: center"
+            id="winners"
+          >
+            <b>Winners of Quiz Championship 2021</b>
+          </h4>
+          <div class="about-marathon w-100">
+            <img src="img/winners.jpg" alt="winners" width="100%" />
+          </div>
+        </div>
+        <div class="about-marathon w-100">
+          <div class="about-marathon w-100">
+            <h4
+              class="title w-100"
+              style="color: #333333; text-align: center"
+              id="winners"
+            >
+              <b>Watch the Grand Finale of Season 1</b>
+            </h4>
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/b8E70YBMZgw"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen=""
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </div> -->
+    <div
+      class="container d-flex flex-md-column flex-column align-items-center"
+      id="IQC"
+    >
+      <div class="racecategories-heading">Structure of IQC Season 2</div>
+      <div class="row w-100">
+        <div class="line-timeline"></div>
+        <div class="timeline">
+          <div class="entry">
+            <h1>Entry</h1>
+            Open Quiz for grade 6 to 10 Pan India
+          </div>
+          <div class="entry">
+            <h1>Prelims 1</h1>
+            20,000 students
+          </div>
+          <div class="entry">
+            <h1>Prelims 2</h1>
+            100 students
+          </div>
+          <div class="entry">
+            <h1>National Semi Finals 1 &amp; 2</h1>
+            Top 12 students will qualify for this round.
+          </div>
+          <div class="entry">
+            <h1>National Finale</h1>
+            The National Grand Finale will be amongst the top 6 students*.
+          </div>
+        </div>
+        <p>*National finale will be telecasted on a Digital Platform</p>
+      </div>
+    </div>
+    <div
+      style="padding-top: 50px"
+      class="container supportby-block d-flex flex-column align-items-center justify-content-center"
+    >
+      <div class="d-flex flex-column w-100 mb-5">
+        <div class="w-100">
+          <h4 class="center-heading text-center topic-heading">
+            Topic of the Quiz -
+            <b style="color: #955edb"
+              >General Knowledge of India &amp; Current Affairs</b
+            >
+          </h4>
+          <!-- <div class=" align-items-center col-md-12 d-flex flex-column mt-2"><img
+						class="img-fluid shree-rajSchool-img" src="img/moodle_logo_small.svg" /></div> -->
+          <div class="d-flex justify-content-center w-100">
+            <h4 class="center-heading text-center">
+              Prelims on the Online Platform &amp; Semi &amp; Finale On Digital
+              Platform
+            </h4>
+          </div>
+        </div>
+      </div>
+      <section id="Book_now">
+        <div
+          class="container d-flex flex-md-column flex-column align-items-center About-master-block"
+        >
+          <div class="registration-heading">About the Quiz Masters</div>
+          <!-- <div class="row w-100">
+            <div
+              class="col-12 col-md-6 d-flex align-items-center justify-content-center"
+            >
+              <div class="card-view w-100 registration-card">
+                <div><img class="img-fluid" src="img/host-1.png" /></div>
+                <h3 class="card-title">Pickbrain Giri Balasubramanium</h3>
+                <div
+                  class="d-flex flex-column justify-content-center align-items-center"
+                >
+                  <h2 class="styled-studentsbold-text">
+                    Asia's prolific quiz host.
+                  </h2>
+                  <h2 class="styled-studentsbold-text">
+                    Hosted shows in 9 countries.
+                  </h2>
+                  <h2 class="styled-studentsbold-text">
+                    Alumnus of Harvard Business School.
+                  </h2>
+                  <h2 class="span-students-text">
+                    Only quizmaster ever to host at the Royal Opera House,
+                    London.
+                  </h2>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-12 col-md-6 d-flex align-items-center justify-content-center"
+            >
+              <div class="card-view w-100 registration-card">
+                <div><img class="img-fluid" src="img/host-2.png" /></div>
+                <h3 class="card-title">Rashmi Furtado</h3>
+                <div
+                  class="d-flex flex-column justify-content-center align-items-center"
+                >
+                  <h2 class="styled-studentsbold-text">
+                    Asia's most prolific professional woman quiz host.
+                  </h2>
+                  <h2 class="styled-studentsbold-text">
+                    Hosted shows in 4 countries
+                  </h2>
+                  <h2 class="styled-studentsbold-text">
+                    Alumnus of NITK Surathkal.
+                  </h2>
+                  <h2 class="span-students-text">
+                    Co-Founder TeacherTribe.world.
+                  </h2>
+                  <br /><br />
+                </div>
+              </div>
+            </div>
+          </div> -->
+        </div>
+      </section>
+      <div class="container">
+        <div class="divider"></div>
+      </div>
+      <div class="pricecard1">
+        <div class="header-with-image">
+          <div class="d-flex justify-content-center w-100 header">
+            <h4
+              class="rulesheading p-0 m-0 d-flex align-items-center text-uppercase"
+            >
+              Best Quizzing School Award 2022
+            </h4>
+            <img src="trophy.jpeg" class="icon-trophy" />
+          </div>
+        </div>
+        <div class="d-flex flex-column flex-md-column p-2">
+          <div
+            class="d-flex flex-row align-items-start row-bulletscontent-area"
+          >
+            <h1 class="row-content-text">
+              Awarded to the school with the highest registrations
+            </h1>
+          </div>
+        </div>
+      </div>
+      <div
+        class="container supportby-block d-flex flex-column align-items-center justify-content-center"
+      >
+        <div class="d-flex flex-column">
+          <h4 class="supported-heading-text">Knowledge Partner</h4>
+          <div
+            class="d-flex flex-column flex-nowrap flex-md-wrap flex-md-row align-items-center justify-content-center w-100"
+          >
+            <div
+              class="col-12 col-md-3 d-flex align-items-center justify-content-center my-3"
+            >
+              <img src="unstop-logo.png" />
+            </div>
+          </div>
+        </div>
+        <div class="d-flex flex-column">
+          <h4 class="supported-heading-text">Powered By</h4>
+          <div
+            class="d-flex flex-column flex-nowrap flex-md-wrap flex-md-row align-items-center justify-content-center w-100"
+          >
+            <div
+              class="col-12 col-md-3 d-flex align-items-center justify-content-center my-3"
+            >
+              <img src="bpcl-logo.jpg" style="width: 180px" />
+            </div>
+          </div>
+        </div>
+        <div class="d-flex flex-column">
+          <h4 class="supported-heading-text">Technology Partners</h4>
+          <div
+            class="d-flex flex-column flex-nowrap flex-md-wrap flex-md-row align-items-center justify-content-center w-100"
+          >
+            <div
+              class="col-12 col-md-3 d-flex align-items-center justify-content-center my-3"
+            >
+              <img src="unibic.jpg" style="width: 180px" />
+            </div>
+          </div>
+        </div>
+        <div class="d-flex flex-column">
+          <h4 class="supported-heading-text">Associate Partners</h4>
+          <div
+            class="d-lg-flex flex-row flex-nowrap flex-md-wrap flex-md-row align-items-center justify-content-center w-100"
+          >
+            <div style="width: 170px" class="mx-3 my-3">
+              <img class="knowledge-tribe" src="abhibus.png" />
+            </div>
+            <div
+              style="width: 170px"
+              class="mx-3 d-flex align-items-center justify-content-center my-3"
+            >
+              <img class="img-fluid" src="lic-logo.jpg" />
+            </div>
+            <!-- <div style="width:170px" class="mx-3 d-flex align-items-center justify-content-center my-3"><img
+							class="img-fluid supportedby-thirdlogo" src="img/vedantu.png" style="height: 75px;" /></div> -->
+            <div
+              style="width: 170px"
+              class="mx-3 d-flex align-items-center justify-content-center my-3"
+            >
+              <img
+                class="img-fluid supportedby-fifthlogo"
+                src="img/MagicSkool_Logo_02.png"
+              />
+            </div>
+            <!-- <div style="width:170px" class="mx-3 d-flex align-items-center justify-content-center my-3"><img
+							class="img-fluid supportedby-fifthlogo" src="img/vedic.jpg" /></div> -->
+            <div
+              style="width: 170px"
+              class="mx-3 d-flex align-items-center justify-content-center my-3"
+            >
+              <img
+                class="img-fluid supportedby-fifthlogo"
+                src="img/SapnaOnline.png"
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          class="my-5 w-100 d-flex align-items-center flex-column justify-content-center"
+        >
+          <h4 class="center-heading">#QuizForACause</h4>
+          <h1 class="support-content-line1 p-0 ml-0">
+            This is a National level Quiz with Exciting Prizes to be won
+          </h1>
+        </div>
+      </div>
+      <div class="container">
+        <div class="divider"></div>
+      </div>
+      <div
+        class="container d-flex flex-md-column flex-column align-items-center w-100"
+      >
+        <div class="racecategories-heading" id="register-now">Registration</div>
+        <div class="row w-100 registration-card justify-content-center">
+          <div class="pyramid-view">
+            <div class="prelimnary-div">Entry</div>
+            <div class="quarters-div">Prelims Round I &amp; II</div>
+            <div class="Semi-finals-div">Semi Finals I &amp; II</div>
+            <div class="finals-div">Finals</div>
+          </div>
+          <div class="">
+            <p style="font-size: 14px; color: #7a7a7a; text-align: center">
+              Registration <strike>Rs299</strike> Early Birds @Rs199 only
+            </p>
+
+            <p class="card-title-subtext">
+              <a
+                class="book-now reg_btn"
+                style="width: 250px"
+                target="_blank"
+                href="registration_form.html?ref=undefined"
+                >Register here</a
+              >
+            </p>
+            <p style="font-size: 14px; color: #7a7a7a; text-align: center">
+              All registration proceeds goes towards upliftment of rural
+              education in India through NGO Shree Raj Educational Centre
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="tab-content container my-5" id="myTabContent">
+        <div
+          aria-labelledby="home-tab"
+          class="tab-pane fade show active"
+          id="home"
+          role="tabpanel"
+        >
+          <h1 class="rules-heading center-heading">
+            Exciting Prizes to be won
+          </h1>
+          <h4 class="center-heading">
+            National Level Quiz Championship - #QuizForACause
+          </h4>
+          <div class="d-flex justify-content-between align-items-center">
+            <div
+              class="d-flex justify-content-between align-items-center shadow flex-wrap mx-auto my-5 justify-content-md-center"
+            >
+              <div class="pricecard">
+                <div class="d-flex justify-content-center w-100 header">
+                  <h4
+                    class="rulesheading p-0 m-0 d-flex align-items-center text-uppercase"
+                  >
+                    Exciting prizes
+                  </h4>
+                </div>
+                <div class="d-flex flex-column flex-md-column p-2">
+                  <div
+                    class="d-flex flex-row align-items-start row-bulletscontent-area"
+                  >
+                    <h1 class="unicode-class">•</h1>
+                    <h1 class="row-content-text">
+                      Trophy, Medal, Certificate &amp; Title of India's Young
+                      Genius 2022
+                    </h1>
+                  </div>
+                  <div
+                    class="d-flex flex-row align-items-start row-bulletscontent-area"
+                  >
+                    <h1 class="unicode-class">•</h1>
+                    <h1 class="row-content-text">
+                      <b
+                        >Cash Prize - 1st Place ₹ 50,000 2nd Place - ₹ 25,000
+                        3rd Place - ₹ 10,000
+                      </b>
+                    </h1>
+                  </div>
+                  <!-- <div class="d-flex flex-row align-items-start row-bulletscontent-area">
+									<h1 class="unicode-class">&bull;</h1>
+									<h1 class="row-content-text">₹ 30,000 gift vouchers from <a href="http://sapnaonline.com/" target="_blank">SapnaOnline</a></h1>
+								</div>
+								<div class="d-flex flex-row align-items-start row-bulletscontent-area">
+									<h1 class="unicode-class">&bull;</h1>
+									<h1 class="row-content-text">E-Kit sent to all participants which comprise of information about the Quiz<br /> along with a Free GK eBook for reading</h1>
+								</div> -->
+                  <div
+                    class="d-flex flex-row align-items-start row-bulletscontent-area"
+                  >
+                    <h1 class="unicode-class">•</h1>
+                    <h1 class="row-content-text">
+                      Certificate to all participants
+                    </h1>
+                  </div>
+                  <div
+                    class="d-flex flex-row align-items-start row-bulletscontent-area"
+                  >
+                    <h1 class="unicode-class">•</h1>
+                    <h1 class="row-content-text">
+                      Certificate to all registered Schools
+                    </h1>
+                  </div>
+                  <div
+                    class="d-flex flex-row align-items-start row-bulletscontent-area"
+                  >
+                    <h1 class="unicode-class">•</h1>
+                    <h1 class="row-content-text">
+                      Schools with the highest registration wins the 'Best
+                      Quizzing School 2022' award &amp;
+                      <b>Cash Prize of ₹ 25,000</b>
+                    </h1>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="container supportby-block d-flex flex-column align-items-center justify-content-center"
+      >
+        <div class="d-flex flex-column w-100">
+          <h4 class="supported-heading-text">In Support of</h4>
+          <div class="row w-100">
+            <div class="col-12 align-items-center col-md-12 d-flex flex-column">
+              <div class="row">
+                <div class="column">
+                  <img
+                    class="img-fluid shree-rajSchool-img"
+                    src="bpcl-logo.jpg"
+                  />
+                </div>
+                <div class="column">
+                  <img
+                    class="img-fluid shree-rajSchool-img"
+                    src="unstop-logo.png"
+                  />
+                </div>
+              </div>
+              <div class="d-flex flex-column align-items-start">
+                <div
+                  class="d-flex flex-row align-items-start row-bulletscontent"
+                >
+                  <h1 class="supportby-unicode-class">•</h1>
+                  <h1 class="support-content-line1">
+                    Shrimad Rajchandra Aatma Tatva Research Centre established
+                    in 2004 in India, is a registered Charitable Trust , exempt
+                    u/s 80G of Income Tax Act, 1961.
+                  </h1>
+                </div>
+                <div
+                  class="d-flex flex-row align-items-start row-bulletscontent"
+                >
+                  <h1 class="supportby-unicode-class">•</h1>
+                  <h1 class="support-content-line1">
+                    It is a Not-for-Profit, NGO that operates numerous<span
+                      class="support-content-line1-bold"
+                    >
+                      Social Service projects</span
+                    >
+                    predominantly in the fields of<br />
+                    1.Education,<br />
+                    2.Health,<br />
+                    3.Women Empowerment<br />
+                    among others, across
+                    <span class="support-content-line1-bold">
+                      various cities</span
+                    >
+                    and in its own little way is transforming the lives of the
+                    less-privileged.
+                  </h1>
+                </div>
+                <div
+                  class="d-flex justify-content-center align-items-center w-100"
+                >
+                  <div
+                    class="d-flex justify-content-center align-items-center my-4 flex-shrink-0"
+                  >
+                    <div
+                      class="d-flex align-items-center justify-content-center w-100"
+                    >
+                      <a
+                        class="readmore-link"
+                        href="https://vitraagvigyaan.org/home/mission_2020"
+                        style="
+                          font-size: 14px;
+                          color: #aaa;
+                          margin: 0px !important;
+                        "
+                        target="_blank"
+                        >Read more</a
+                      >
+                    </div>
+                    <div class="readmore-img">
+                      <img
+                        class="img-fluid shree-rajSchool-img"
+                        src="img/skip-track.png"
+                        style="
+                          -webkit-filter: grayscale(100%);
+                          filter: grayscale(100%);
+                          opacity: 0.5;
+                          height: 8px;
+                          margin-top: 4px;
+                          margin-left: 4px;
+                          width: 8px;
+                        "
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="container">
+                  <div class="divider"></div>
+                </div>
+                <div
+                  class="container d-flex flex-md-column flex-column align-items-center w-100"
+                >
+                  <p style="font-size: 14px; color: #7a7a7a">
+                    Registration <strike>Rs299</strike> Early Birds @Rs199 only
+                  </p>
+                  <div
+                    class="row w-100 registration-card justify-content-center"
+                  >
+                    <p class="card-title-subtext">
+                      <a
+                        class="book-now reg_btn"
+                        target="_blank"
+                        href="registration_form.html?ref=undefined"
+                        >Register here</a
+                      >
+                    </p>
+                  </div>
+                  <p style="font-size: 14px; color: #7a7a7a">
+                    All registration proceeds goes towards upliftment of rural
+                    education in India through NGO Shree Raj Educational Centre
+                  </p>
+                </div>
+                <div class="container">
+                  <div class="divider"></div>
+                </div>
+                <div
+                  class="container d-flex flex-md-column flex-column align-items-center w-100"
+                >
+                  <div
+                    class="row w-100 add-info justify-content-left"
+                    id="Quize_dates"
+                  >
+                    <h4 style="font-size: 24px" class="supported-heading-text">
+                      Quiz Prelim Round Dates
+                    </h4>
+                    <div class="prelim-dates-cont" style="font-size: 16px">
+                      <p>
+                        Prelims 1 is scheduled for the 12th of February 2022
+                        (Saturday) 4.45pm to 5.30pm
+                      </p>
+                      <p>
+                        Prelims 2 is scheduled for the 19th of February 2022
+                        (Saturday) 4.45pm to 5.30pm
+                      </p>
+                      <br />
+                      <p>
+                        All registered participants will receive the Login
+                        details to take the prelims on their registered email id
+                        by the 10th of Feb 2022
+                      </p>
+                      <br />
+                      <p>
+                        You can take the prelims on your Laptop/Desktop or
+                        Mobile phone.
+                      </p>
+                      <p>
+                        Please ensure you have very good internet connectivity,
+                        preferable to have a minimum of 4 MBPS wifi or a minimum
+                        4G data speed.
+                      </p>
+                      <p>A webcam is not required.</p>
+                      <br />
+                      <p>
+                        Other details, terms, and conditions will be made
+                        available over email when you receive the Quiz prelims
+                        login details before or by the 10th of February 2022.
+                      </p>
+                      <p>All the best!</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="container">
+                  <div class="divider"></div>
+                </div>
+                <div
+                  class="container d-flex flex-md-column flex-column align-items-center w-100"
+                >
+                  <div
+                    class="row w-100 add-info justify-content-left"
+                    id="faqs"
+                  >
+                    <h4 style="font-size: 24px" class="supported-heading-text">
+                      Additional Information (FAQ's) -
+                    </h4>
+                    <ul
+                      class="info-list"
+                      style="list-style: decimal; font-size: 16px"
+                    >
+                      <li class="info-list-items">
+                        Quiz format date &amp; time -
+                        <p>The format of the Quiz is as below -</p>
+                        <ul class="info-sub-list">
+                          <li class="info-sub-list-items">
+                            Round 1 - 12th February 2022(Saturday) from 4.45pm
+                            to 5.30pm
+                          </li>
+                          <li class="info-sub-list-items">
+                            Round 2 - 19th February 2022(Saturday) from 4.45pm
+                            to 5.30pm
+                          </li>
+                          <li class="info-sub-list-items">
+                            Round 3 - National SemiFinals - Top 12 based on
+                            round 2 scores will move to the National Semi-Finals
+                            (4th week of February 2022)
+                          </li>
+                          <li class="info-sub-list-items">
+                            Round 4 - National Finale - Top 6 based on round 3
+                            will compete in the Grand Finale (4th week of
+                            February 2022)
+                          </li>
+                        </ul>
+                        <p>
+                          Topic - General Knowledge of India &amp; Current
+                          Affairs
+                        </p>
+                        <p>Grades - 6th to 10th Standard</p>
+                        <p>
+                          Quiz Conducted by - 'Pickbrain' Giri Balasubramanium
+                        </p>
+                        <p>
+                          Quiz Organised by - Sapna Book House in aid of NGO
+                          Shree Raj Educational Centre.
+                        </p>
+                      </li>
+                      <li class="info-list-items">
+                        This is a Digital Quiz competition hence you do not have
+                        to travel anywhere to participate. All you require is a
+                        laptop/computer with a very good Internet connection.
+                      </li>
+                      <li class="info-list-items">
+                        This is a paid quiz - <strike>Rs299</strike> Early Birds
+                        @Rs199 only
+                      </li>
+                      <li class="info-list-items">
+                        The Topic for the Quiz is INDIA - hence prepare yourself
+                        with all the required information on INDIA
+                      </li>
+                      <li class="info-list-items">
+                        For the Prelims Round 1 &amp; 2 - you will need only
+                        your laptop/computer with a very good internet
+                        connection - the link for participation will be sent to
+                        you<br />
+                        For the Semi-Finals &amp; Finals - it will happen over a
+                        digital platform like Youtube or Zoom
+                      </li>
+                      <li class="info-list-items">
+                        Winners will be declared on Sapna Book House social
+                        media - Instagram &amp; Facebook<br />
+                        Instagram -
+                        <a
+                          href="https://www.instagram.com/educationfirstindia/"
+                          target="_blank"
+                          >@educationfirstindia</a
+                        >
+                        ,
+                        <a
+                          href="https://www.instagram.com/sapna_book_house/"
+                          target="_blank"
+                          >@sapna_book_house</a
+                        >
+                        | Facebook -
+                        <a
+                          href="https://www.facebook.com/sapnaretail/"
+                          target="_blank"
+                          >@sapnaretaIl</a
+                        ><br />
+                        Winners will also be declared on India Quiz Championship
+                        Instagram Page -
+                        <a
+                          href="https://www.instagram.com/indiaquizchampionship/"
+                          target="_blank"
+                          >@indiaquizchampionship</a
+                        ><br />
+                        Please follow the respective pages
+                      </li>
+                      <li class="info-list-items">
+                        Prizes for the winners will be sent to the respective
+                        locations
+                      </li>
+                      <li class="info-list-items">
+                        Once registered please keep your email id active as all
+                        further communication will be sent to your email id.
+                      </li>
+                      <li class="info-list-items">
+                        Further communication will also be updated on the
+                        respective social media channels as mentioned above.
+                      </li>
+                      <li class="info-list-items">
+                        For any queries, you can email us at
+                        <a href="mailto:info@indiaqc.in">info@indiaqc.in</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer style="background: #eeeeee">
+      <div class="row">
+        <div class="col d-flex justify-content-center" style="margin-top: 5px">
+          <p>
+            Contact:
+            <a style="text-decoration: underline" href="mailto:info@indiaqc.in"
+              >info@indiaqc.in</a
+            >
+            | Follow us on
+            <a
+              target="_blank"
+              href="https://www.instagram.com/sapna_book_house/"
+              ><img src="instagram.jpeg" width="20px"
+            /></a>
+          </p>
+        </div>
+        <div class="col d-flex justify-content-center" style="margin-top: 5px">
+          <p>
+            <a
+              style="text-decoration: underline"
+              href="terms-conditions.pdf"
+              target="_blank"
+              >Terms &amp; Conditions</a
+            >
+            |
+            <a
+              target="_blank"
+              style="text-decoration: underline"
+              href="policies.pdf"
+              >Privacy</a
+            >
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
+      integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
+      integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
+      integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+    <div
+      class="razorpay-container"
+      style="
+        z-index: 2147483647;
+        position: fixed;
+        top: 0px;
+        display: none;
+        left: 0px;
+        height: 100%;
+        width: 100%;
+        backface-visibility: hidden;
+        overflow-y: visible;
+      "
+    >
+      <style>
+        @keyframes rzp-rot {
+          to {
+            transform: rotate(360deg);
+          }
+        }
+        @-webkit-keyframes rzp-rot {
+          to {
+            -webkit-transform: rotate(360deg);
+          }
+        }
+      </style>
+      <div
+        class="razorpay-backdrop"
+        style="
+          min-height: 100%;
+          transition: all 0.3s ease-out 0s;
+          position: fixed;
+          top: 0px;
+          left: 0px;
+          width: 100%;
+          height: 100%;
+        "
+      >
+        <span
+          style="
+            text-decoration: none;
+            background: rgb(214, 68, 68);
+            border: 1px dashed white;
+            padding: 3px;
+            opacity: 0;
+            transform: rotate(45deg);
+            transition: opacity 0.3s ease-in 0s;
+            font-family: lato, ubuntu, helvetica, sans-serif;
+            color: white;
+            position: absolute;
+            width: 200px;
+            text-align: center;
+            right: -50px;
+            top: 50px;
+          "
+          >Test Mode</span
+        >
+      </div>
+      <iframe
+        style="
+          opacity: 1;
+          height: 100%;
+          position: relative;
+          background: none;
+          display: block;
+          border: 0 none transparent;
+          margin: 0px;
+          padding: 0px;
+          z-index: 2;
+        "
+        allowtransparency="true"
+        frameborder="0"
+        width="100%"
+        height="100%"
+        allowpaymentrequest="true"
+        src="https://api.razorpay.com/v1/checkout/public?traffic_env=production&amp;build=840de227498986b90a79eddd4a4895dc68f90545&amp;modern=1"
+        class="razorpay-checkout-frame"
+        allow="otp-credentials"
+      ></iframe>
+    </div>
+    <script>
+      // $('.book-now').each(function(){
+      // 	$(this).attr("href","");
+      // 	$(this).click(function(e){
+      // 		e.preventDefault();
+      // 		Swal.fire({
+      // 			html: "<div class='cus-swal-alert'>\
+      // 					   <h4>The Registration for India Quiz Championship 2021 is closed.</h4>\
+      // 						 <h4>(Registration dates was from 24th December 2020 - 3rd Feb 2021)</h4>\
+      // 						 <p>For those who have registered please note -</p>\
+      // 						 <p>Prelims 1 round is on the <strong>13th of February 2021</strong></p>\
+      // 						 <p>You will receive details on how to participate in Prelims 1 in your registered email id.<p>\
+      // 						 <p>For any other queries please email - <a href='mailto:info@IndiaQC.in'>info@IndiaQC.in</a></p>\
+      // 						</div>"
+      // 		});
+      // 	});
+      // });
+
+      // $('.semi-finals').each(function(){
+      //    $(this).click(function(e){
+      // 	   e.preventDefault();
+      // 	   Swal.fire({
+      // 	       html:"<div class='cus-swal-alert'>\
+      // 				   <h4>The National Semi Finals & Grand Finale will be held on Saturday 27th February 2021 3pm onwards.</h4>\
+      // 				   <p>The contestants will be contacted over the phone.</p>\
+      // 				   <p>Any queries please email - <a href='mailto:info@IndiaQC.in'>info@IndiaQC.in</a></p>\
+      // 				   <p>IndiaQC<p>\
+      // 				 </div>"
+      // 	   });
+      //    });
+      // });
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async=""
+      src="https://www.googletagmanager.com/gtag/js?id=UA-189709232-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-189709232-1");
+    </script>
+  </body>
+</html>
