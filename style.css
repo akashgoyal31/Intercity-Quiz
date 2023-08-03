@@ -39,17 +39,20 @@ body {
   }
   
   .navbar-menu li {
+      margin-top: 1rem;
     margin-left: 20px;
-  }
-  
-  .navbar-menu li:first-child {
+}
+
+.navbar-menu li:first-child {
     margin-left: 0;
-  }
-  
-  .navbar-menu li a {
+}
+
+.navbar-menu li a {
     color: black;
     text-decoration: none;
     transition: 0.3s;
+    text-align: left;
+    font-weight: bold;
   }
   
   .navbar-menu li a:hover {
@@ -80,19 +83,19 @@ body {
     height: 2rem;
 }
   
-  @media (max-width: 768px) {
+  @media (max-width: 770px) {
      body{
         /* overflow: hidden; */
         overflow-x: hidden;
         scroll-behavior: smooth;
      }
     .navbar{
-      width: 500px;
-      height: 100vh;
-      background: white;
-      position: absolute;
-      top: 0;
-      left: 0;
+        width: 210px;
+        height: 27vh;
+        background: white;
+        position: absolute;
+        top: 0;
+        right: 65px;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -107,14 +110,16 @@ body {
         align-items: center;
 
     }
-    .active .navbar{
+    .active .navbar {
         transform: translateX(0);
         opacity: 1;
         visibility: visible;
         pointer-events: auto;
-        padding: 147px;
-        margin: -229px;
-        font-size: 23px
+        padding-right: 50px;
+        margin: 0;
+        font-size: 22px;
+        font-weight: bold;
+        font-family: fangsong;
     }
     .active .mobile-menus .mobile-icons{
         display: block;
@@ -132,6 +137,7 @@ body {
       cursor: pointer;
       margin: 2rem 2rem;
     }
+
   
   }
   
@@ -209,10 +215,15 @@ align-items: center;
     }
 
     b {
-        font-size: 20px;
+        font-size: 13px;
         padding-left: 10px;
         padding-top: 5px;
         padding-bottom: 0px;
+    }
+    .rulesheading {
+      
+        font-size: 17px;
+        
     }
 
     /* .about-left{
@@ -281,12 +292,12 @@ align-items: center;
     }
 
     b {
-        font-size: 40px;
-        padding-left: 10px;
-        padding-top: 5px;
-        padding-bottom: 0px;
+        font-size: 15px;
+
     }
 
+    
+ 
 }
 
 @media (max-width:280px) {
@@ -326,13 +337,7 @@ align-items: center;
         height: 280px;
     }
 
-    b {
-        font-size: 30px;
-        margin-left: 10px;
-        padding-top: 0px;
-        padding-bottom: 0px;
-    }
-
+   
     /* .about-left{
         margin-left: 0px;
         margin-top: 0px;
@@ -381,6 +386,7 @@ align-items: center;
     grid-area: box4;
 }
 
+
 #box5 {
     grid-area: box5;
 }
@@ -414,17 +420,26 @@ align-items: center;
 }
 
 #box2 img {
-    height: 32vh;
+    height: 38vh;
     width: 10rem;
     margin-bottom: 2rem;
 }
 #box7 img {
-    height: 32vh;
-    width: 10rem;
+    height: 35vh;
+    width: 14 rem;
     margin-bottom: 2rem;
 }
 
-
+#box4 img{
+    height: 22vh;
+    width: 18rem;
+    margin-bottom: 2rem;
+}
+#box5 img{
+    height: 27vh;
+    width: 15rem;
+    margin-bottom: 2rem;
+}
 @media (max-width:650px) {
     
     
@@ -479,15 +494,41 @@ align-items: center;
                          'right';
     grid-gap: 3rem;
     width: 100%;
-    padding: 2rem 3em;
+    padding: 2rem 1em;
     align-items: center;
 
 }
 
 }
 @media (max-width:460px) {
-  
+    .box img {
+        height: 23vh;
+        width: 18rem;
+        margin-bottom: 2rem;
+    }
     
+    #box2 img {
+        height: 32vh;
+        width: 10rem;
+        margin-bottom: 2rem;
+    }
+    #box7 img {
+        height: 32vh;
+        width: 10rem;
+        margin-bottom: 2rem;
+    }
+    
+    #box4 img{
+        height: 22vh;
+        width: 18rem;
+        margin-bottom: 2rem;
+    }
+    #box5 img{
+        height: 25vh;
+        width: 17rem;
+        margin-bottom: 2rem;
+    }
+
    
 }
 .prizes {
@@ -495,7 +536,7 @@ align-items: center;
 }
 
 .prizes1 img {
-    width: 60%;
+    width: 50%;
     height: 50%;
 
 }
@@ -971,6 +1012,10 @@ em {
     } */
 }
 
+.timelines{
+    margin: 4em 2em;
+     padding: 1rem 1rem ;
+}
 /* ******************************************* */
 .header-image{
     display: flex;
@@ -1051,6 +1096,10 @@ em {
 .rulesheadings{
     font-size: 10px;
     left: 7px;
+}
+.timelines{
+    margin: 3em 1em;
+     padding: 1rem 0rem ;
 }
 
 }
