@@ -1,9 +1,19 @@
+html{
+    overflow-x: hidden;
+}
 
 body {
     margin: 0;
     font-family: Arial, sans-serif;
+    /* overflow-x: hidden; */
+    scroll-behavior: smooth;
   }
-  
+  .headers{
+    display: flex;
+    height: 7rem;
+    justify-content: space-between;
+    
+  }
   .navbar {
     /* opacity: 0.5; */
     display: flex;
@@ -12,12 +22,13 @@ body {
     background-color: #ffffff;
     padding: 10px 20px;
     color: #000000;
-    /* position: static; */
+    /* position: sticky; */
     margin-right: 2rem;
   }
   
   .navbar-logo img {
     margin-left: 2rem;
+    margin-top: 1rem;
     max-height: 70px;
     max-width: 70px;
   }
@@ -48,91 +59,86 @@ body {
   .navbar-mobile-menu {
     display: none;
   }
+.mobile-menus{
+    display: none;
+    background: transparent;
+    cursor: pointer;
+}  
+.mobile-menus{
+    display: none;
+    height: 40px;
+}
+
+.mobile-icon{
+    width: 2rem;
+    height: 2rem;
+}
+  
+.mobile-icons{
+    display: none;
+    width: 2rem;
+    height: 2rem;
+}
   
   @media (max-width: 768px) {
-    .navbar-menu {
-      display: none;
+     body{
+        /* overflow: hidden; */
+        overflow-x: hidden;
+        scroll-behavior: smooth;
+     }
+    .navbar{
+      width: 500px;
+      height: 100vh;
+      background: white;
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+       transform: translateX(100%); 
+      transition: all 0.5s linear;  
+        opacity: 0; 
+        visibility: hidden; 
+       pointer-events: none;  
     }
-  
-    .navbar-mobile-menu {
+    .navbar-menu{
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .active .navbar{
+        transform: translateX(0);
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+        padding: 147px;
+        margin: -229px;
+        font-size: 23px
+    }
+    .active .mobile-menus .mobile-icons{
+        display: block;
+        
+    }
+    .active .mobile-menus .mobile-icon{
+        display: none;
+
+    }
+    .mobile-menus{
       display: block;
+      z-index: 999;
+      border: 3px solid #212529;
+      color: #212529;
       cursor: pointer;
+      margin: 2rem 2rem;
     }
   
-    .navbar-mobile-menu span {
-      display: block;
-      width: 30px;
-      height: 3px;
-      background-color: black;
-      margin-bottom: 5px;
-    }
-  
-    .navbar-mobile-menu.open span {
-      transform: rotate(45deg);
-    }
   }
   
 body {
     height: 100%;
     width: auto;
 }
-
-.Club-name {
-    font-style: italic;
-    font-size: 17px;
-    font-weight: 600;
-}
-
-.navbar-brand {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-}
-
-.qcm-name {
-    width: 20vw;
-
-}
-
-.navbar {
-    /* position:sticky; */
-    display: grid;
-
-    text-decoration: none;
-    grid-auto-flow: column;
-
-}
-
-.iqc-brand img {
-
-    height: 18vh;
-    width: 18vw;
-}
-
-.navbar-item {
-    padding: 5px;
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: 600;
-    /* align-items: center; */
-    /* justify-items: center; */
-}
-
-.item1 {
-    padding: 8px;
-    font-size: 17px;
-    color: black;
-    text-decoration: none;
-
-}
-
-.menu-icon {
-    width: 28px;
-    display: none;
-}
-
-
 .about-section {
     display: grid;
     /* grid-template-columns: repeat(auto-fit, minmax(250px, 2fr)); */
@@ -354,7 +360,7 @@ align-items: center;
     grid-gap: 1rem;
     grid-template-areas:
         'box1 box1'
-        'box2 box2'
+        'box2 box7'
         'box3 box4'
         'box5 box6';
 }
@@ -382,6 +388,9 @@ align-items: center;
 #box6 {
     grid-area: box6;
 }
+#box7 {
+    grid-area: box7;
+}
 
 .box {
     /* border: 2px solid red; */
@@ -399,12 +408,17 @@ align-items: center;
 }
 
 .box img {
-    height: 20vh;
-    width: 15rem;
+    height: 28vh;
+    width: 16rem;
     margin-bottom: 2rem;
 }
 
 #box2 img {
+    height: 32vh;
+    width: 10rem;
+    margin-bottom: 2rem;
+}
+#box7 img {
     height: 32vh;
     width: 10rem;
     margin-bottom: 2rem;
@@ -451,6 +465,7 @@ align-items: center;
         grid-template-areas:
             'box1 box1'
             'box2 box2'
+            'box7 box7'
             'box3 box3'
             'box4 box4'
             'box5 box5'
@@ -523,7 +538,7 @@ align-items: center;
     border: 2px solid #ffe4c1;
     /* border-color: plum; */
     border-radius: 23px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family:Arial, Helvetica, sans-serif;
     text-decoration: none;
     transition: 0.5s;
     /* z-index: 0; */
@@ -622,7 +637,7 @@ em {
 
 
 .footer {
-    background-color: #004658;
+    background-color: #759b1f;
     color: #fff;
 }
 
